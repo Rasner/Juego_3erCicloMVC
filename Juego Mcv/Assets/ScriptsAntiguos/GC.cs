@@ -8,7 +8,6 @@ public class GC : MonoBehaviour {
     public GameObject puertaup;
     public GameObject puertadown;
     public GameObject player;
-    public GameObject bandera;
 
 	// Use this for initialization
 	void Start () {
@@ -20,11 +19,11 @@ public class GC : MonoBehaviour {
 	void Update () {
         if (GC.instance.puerta == true)
         {
-            if (puertaup.transform.position.y < 40)
+            if (puertaup.transform.position.y < 3)
             {
                 puertaup.transform.Translate(Vector3.up * Time.deltaTime);
             }
-            if (puertadown.transform.position.y > 31)
+            if (puertadown.transform.position.y > 0)
             {
                 puertadown.transform.Translate(Vector3.down * Time.deltaTime);
             }
@@ -32,24 +31,15 @@ public class GC : MonoBehaviour {
 
         if (GC.instance.puerta == false)
         {
-            if (puertaup.transform.position.y > 37)
+            if (puertaup.transform.position.y > 2)
             {
                 puertaup.transform.Translate(Vector3.down * Time.deltaTime);
             }
-            if (puertadown.transform.position.y < 34)
+            if (puertadown.transform.position.y < 1)
             {
                 puertadown.transform.Translate(Vector3.up * Time.deltaTime);
             }
         }
 
-    }
-
-    public void reiniciar (bool reinicio)
-    {
-        if (reinicio == true)
-        {
-            player.transform.position = transform.position;
-            Instantiate(bandera);
-        }
     }
 }
