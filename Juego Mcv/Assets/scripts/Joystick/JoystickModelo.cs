@@ -5,7 +5,7 @@ using System.Collections;
 
 public class JoystickModelo : MonoBehaviour, IDragHandler,  IPointerUpHandler, IPointerDownHandler
 {
- {
+ 
     public Image BT, JS;
     public Vector3 InputDirection { set; get; }
 	
