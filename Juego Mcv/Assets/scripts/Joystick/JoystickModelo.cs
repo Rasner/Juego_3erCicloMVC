@@ -18,6 +18,9 @@ public class JoystickModelo : MonoBehaviour
     // Use this for initialization
     void Start () {
 		instance = this;
+		BT = GetComponent<Image>();
+        JS = GetComponentsInChildren<Image>()[1];
+        InputDirection = Vector3.zero;
 	}
 	
 	// Update is called once per frame
