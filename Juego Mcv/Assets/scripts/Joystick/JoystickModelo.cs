@@ -8,6 +8,8 @@ public class JoystickModelo : MonoBehaviour, IDragHandler,  IPointerUpHandler, I
  
     public Image BT, JS;
     public Vector3 InputDirection { set; get; }
+
+	public Vector2 pos;
 	
 	public static JoystickModelo instance;
 
