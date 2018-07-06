@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 
-public class JoystickModelo : MonoBehaviour, IDragHandler,  IPointerUpHandler, IPointerDownHandler
+public class JoystickModelo : MonoBehaviour
 {
  
     public Image BT, JS;
