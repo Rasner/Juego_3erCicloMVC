@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torrecontrolador : MonoBehaviour {
-
-	public float speed = 5.0f;
-	public static Torrecontrolador instance;
+public class PisoModelo : MonoBehaviour {
+ 	public static PisoModelo instance;
+    public bool choque;
 	// Use this for initialization
 	void Start () {
 		instance = this;

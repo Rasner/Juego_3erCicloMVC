@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torrecontrolador : MonoBehaviour {
-
-	public float speed = 5.0f;
-	public static Torrecontrolador instance;
+public class PlayerModelo : MonoBehaviour {
+  public VirtualJoystick joystick;
+    public float speed;
+	public static PlayerModelo instance;
 	// Use this for initialization
 	void Start () {
 		instance = this;
