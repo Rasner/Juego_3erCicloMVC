@@ -13,4 +13,9 @@ public class Playercontrolador : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void movement()
+    {
+        transform.Translate(PlayerModelo.instance.speed * JoystickModelo.instance.InputDirection * Time.deltaTime);
+    }
 }
