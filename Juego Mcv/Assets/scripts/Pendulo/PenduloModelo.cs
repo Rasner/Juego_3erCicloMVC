@@ -17,12 +17,15 @@ public class PenduloModelo : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		instance = this;
-		_start = PendulumRotation (_angle);
-		_end = PendulumRotation (-_angle);
+
+	_start = Pendulocontrolador.instance.PenduloRotation(_angle);
+	_end = Pendulocontrolador.instance.PenduloRotation(-_angle);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+
 }
