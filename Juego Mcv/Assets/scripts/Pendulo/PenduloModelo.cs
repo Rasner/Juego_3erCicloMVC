@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PenduloModelo : MonoBehaviour {
-	public	Quaternion _start, _end;
+	public	Quaternion _start;
+	public Quaternion _end;
 	// Use this for initialization
 	[SerializeField, Range (0.0f, 360f)]
 	public float _angle = 90f;
